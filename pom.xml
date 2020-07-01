@@ -11,11 +11,12 @@
     <modules>
         <module>reflection-and-cglib</module>
         <module>design-patterns</module>
+        <module>jakarta-ee</module>
     </modules>
 
     <properties>
         <project.build.sourceEncoding>UTf-8</project.build.sourceEncoding>
-        <junit-jupiter.version>5.6.1</junit-jupiter.version>
+        <junit-jupiter.version>RELEASE</junit-jupiter.version>
         <cglib.version>3.3.0</cglib.version>
     </properties>
 
@@ -23,7 +24,7 @@
         <dependencies>
             <dependency>
                 <groupId>org.junit.jupiter</groupId>
-                <artifactId>junit-jupiter-api</artifactId>
+                <artifactId>junit-jupiter</artifactId>
                 <version>${junit-jupiter.version}</version>
                 <scope>test</scope>
             </dependency>
