@@ -13,6 +13,7 @@
         <module>design-patterns</module>
         <module>jakarta-ee</module>
         <module>java-lang</module>
+        <module>concurrency</module>
     </modules>
 
     <properties>
