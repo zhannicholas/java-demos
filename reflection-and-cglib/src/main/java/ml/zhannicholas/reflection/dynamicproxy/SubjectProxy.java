@@ -12,6 +12,19 @@ public class SubjectProxy implements InvocationHandler {
 
     @Override
     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
-        return method.invoke(target, args);
+        // 执行业务逻辑之前的预处理逻辑……
+         preprocess();
+        Object result = method.invoke(target, args);
+        // 执行业务逻辑之后的后置处理逻辑……
+         postprocess();
+        return result;
+    }
+
+    private void preprocess() {
+        System.out.println("Preprocess...");
+    }
+
+    private void postprocess() {
+        System.out.println("Postprocess...");
     }
 }
