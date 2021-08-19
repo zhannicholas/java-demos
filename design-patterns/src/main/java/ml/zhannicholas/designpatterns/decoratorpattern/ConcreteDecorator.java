@@ -3,8 +3,8 @@ package ml.zhannicholas.designpatterns.decoratorpattern;
 /**
  * adds responsibilities to the component.
  */
-public class ConcreteDecoratorB extends Decorator {
-    public ConcreteDecoratorB(Component component) {
+public class ConcreteDecorator extends Decorator {
+    public ConcreteDecorator(Component component) {
         super(component);
     }
 
